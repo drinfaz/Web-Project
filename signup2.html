@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h4 class="brand">pet-bed &trade;</h4>
+        <div class="center">
+         <ul class="nav">
+            <li><a href="index.html">home</a></li>
+            <li><a href="shop.html">shop<a></li>
+            <li><a href="about.html">about us</a></li>
+         </ul>
+        </div>
+        <div>
+            <a href="signup2.html"><button class="log-in">sign in</button></a>   
+        </div>
+    </header>
+    <div id="container2">
+        <div class="form2">
+            <div class="toggle-bar">
+                <button type="button" class="toggle-btn" onclick="switchDiv(true);">Log In</button>
+                <button type="button" class="toggle-btn" onclick="switchDiv(false)">Sign Up</button>
+            </div>
+            <form id="login" class="input-group" onsubmit="return validForm()" name="form">
+                <input type="text" name="email" class="input-field" placeholder="Email"> 
+                <input type="password" name="password" class="input-field" placeholder="Password"> 
+                <button type="submit" class="submit-btn">Log In</button>
+            </form>
+            <form id="signup" class="input-group" onsubmit="return validForm2()" name="form2">
+                <input type="text" name="email2" class="input-field" placeholder="Email"> 
+                <input type="password" name="password2" class="input-field" placeholder="Password"> 
+                <input type="password" name="confirm_password" class="input-field" placeholder="Confirm Password">
+                <button type="submit" class="submit-btn">Sign Up</button>
+            </form> 
+        </div>
+    </div>
+    <script src="script/registerscript2.js"></script>
+</body>
+</html>
